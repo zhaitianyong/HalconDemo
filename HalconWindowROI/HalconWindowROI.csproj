@@ -33,10 +33,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-<<<<<<< HEAD
     <Prefer32Bit>false</Prefer32Bit>
-=======
->>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="halcondotnet">
