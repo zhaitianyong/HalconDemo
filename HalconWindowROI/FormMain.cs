@@ -22,7 +22,13 @@ namespace HalconWindowROI
         {
             InitializeComponent();
 
+<<<<<<< HEAD
          
+=======
+            _viewCtrl = new HWndCtrl(hWindowControl1);
+            _roiCtrl = new ROIController();
+            _viewCtrl.useROIController(_roiCtrl);
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
 
 
         }
@@ -39,8 +45,13 @@ namespace HalconWindowROI
             {
                 hImage = new HImage(dialog.FileName);
                 _viewCtrl.addIconicVar(hImage); 
+<<<<<<< HEAD
                 //_viewCtrl.resetWindow();
                 //_viewCtrl.repaint();
+=======
+                _viewCtrl.resetWindow();
+                _viewCtrl.repaint();
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
                 _viewCtrl.setViewState(HWndCtrl.MODE_VIEW_ZOOM_Wheel);
             }
           
@@ -48,9 +59,12 @@ namespace HalconWindowROI
 
         private void Form1_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             _viewCtrl = new HWndCtrl(hWindowControl1);
             _roiCtrl = new ROIController();
             _viewCtrl.useROIController(_roiCtrl);
+=======
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
             _roiCtrl.viewController.viewPort.HMouseMove += ViewPort_HMouseMove; ;
         }
 

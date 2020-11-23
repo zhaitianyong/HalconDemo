@@ -3,7 +3,12 @@ using ViewROI;
 using System.Collections;
 using System.Collections.Generic;
 using HalconDotNet;
+<<<<<<< HEAD
 using System.Diagnostics;
+=======
+
+
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
 
 namespace ViewROI
 {
@@ -213,9 +218,13 @@ namespace ViewROI
         {
             viewPort = view;
             stateView = MODE_VIEW_NONE;
+<<<<<<< HEAD
             // 赋值
             WindowHeight = view.Height;
             WindowWidth = view.Width;
+=======
+
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
 
             setZoomWndFactor();
             zoomAddOn = Math.Pow(0.9, 5);
@@ -828,13 +837,19 @@ namespace ViewROI
                         var area = image.GetDomain().AreaCenter(out double _, out _);
                         image.GetImagePointer1(out _, out var newImageWidth, out int newImageHeight);
 
+<<<<<<< HEAD
                         Debug.WriteLine($"newImageWidth:{newImageWidth},newImageHeight:{newImageHeight} ");
+=======
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
                         if (area == newImageWidth * newImageHeight)
                         {
                             clearList();
                             SetNewPart(newImageWidth, newImageHeight);
                         }//if//if
+<<<<<<< HEAD
                         
+=======
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
                         break;
                     }
             }
@@ -852,7 +867,10 @@ namespace ViewROI
             if (newImageHeight == imageHeight && newImageWidth == imageWidth) return;
             imageHeight = newImageHeight;
             imageWidth = newImageWidth;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
             SetPart();
         }
 
@@ -866,11 +884,20 @@ namespace ViewROI
                     dispWidth = imageWidth;
                     dispHeight = (int)(1.0 * imageWidth / WindowAspectRatio);
 
+<<<<<<< HEAD
                 }if (ImageAspectRatio < WindowAspectRatio) // bug 
+=======
+                }
+                if (ImageAspectRatio < WindowAspectRatio)
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
                 {
                     //高度顶格
                     dispHeight = imageHeight;
                     dispWidth = (int)(imageHeight * WindowAspectRatio);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03798f184e99b3c42379e3f69136cce3c250666b
                 }
             }
             else
